@@ -22,7 +22,7 @@ import okio.ByteString;
 public class WsManager implements IWsManager {
 
   private final static int RECONNECT_INTERVAL = 10 * 1000;    //重连自增步长
-  private final static long RECONNECT_MAX_TIME = 120 * 1000;   //最大重连间隔
+  private final static long RECONNECT_MAX_TIME = 30 * 1000;   //最大重连间隔
   private Context mContext;
   private String wsUrl;
   private WebSocket mWebSocket;
@@ -220,10 +220,11 @@ public class WsManager implements IWsManager {
       return;
     }
 
-    if (!isNetworkConnected(mContext)) {
-      setCurrentStatus(WsStatus.DISCONNECTED);
-      return;
-    }
+    //不管网络是否连接都进行重连
+//    if (!isNetworkConnected(mContext)) {
+//      setCurrentStatus(WsStatus.DISCONNECTED);
+//      return;
+//    }
 
     setCurrentStatus(WsStatus.RECONNECT);
 
@@ -263,10 +264,10 @@ public class WsManager implements IWsManager {
   }
 
   private synchronized void buildConnect() {
-    if (!isNetworkConnected(mContext)) {
-      setCurrentStatus(WsStatus.DISCONNECTED);
-      return;
-    }
+//    if (!isNetworkConnected(mContext)) {
+//      setCurrentStatus(WsStatus.DISCONNECTED);
+//      return;
+//    }
     switch (getCurrentStatus()) {
       case WsStatus.CONNECTED:
       case WsStatus.CONNECTING:

@@ -31,7 +31,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_toLeftOf="@id/btn_connect"
-    android:text="ws://121.40.165.18:8088" />
+    android:text="ws://192.168.90.26:8001/ws?uid=9a61ebc8e37e53d8" />
 
   <TextView
     android:id="@+id/btn_clear"

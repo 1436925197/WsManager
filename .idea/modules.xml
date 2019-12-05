@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WsManager.iml" filepath="$PROJECT_DIR$/WsManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WsManagerFork.iml" filepath="$PROJECT_DIR$/WsManagerFork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/WsManagerFork-app.iml" filepath="$PROJECT_DIR$/app/WsManagerFork-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttp-ws-example/WsManagerFork-okhttp-ws-example.iml" filepath="$PROJECT_DIR$/okhttp-ws-example/WsManagerFork-okhttp-ws-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rx-wsmanager/WsManagerFork-rx-wsmanager.iml" filepath="$PROJECT_DIR$/rx-wsmanager/WsManagerFork-rx-wsmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wsmanager/WsManagerFork-wsmanager.iml" filepath="$PROJECT_DIR$/wsmanager/WsManagerFork-wsmanager.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttp-ws-example/okhttp-ws-example.iml" filepath="$PROJECT_DIR$/okhttp-ws-example/okhttp-ws-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/rx-wsmanager/rx-wsmanager.iml" filepath="$PROJECT_DIR$/rx-wsmanager/rx-wsmanager.iml" />
